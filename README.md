@@ -23,5 +23,17 @@
       
       echo 199 > /sys/class/gpio/export  // Это создаст экземпляр GPIO199.
       echo out > /sys/class/gpio/gpio199/direction // Это установит GPIO199 как ВЫХОД.
-      echo 1 > /sys/class/gpio/gpio199/value  // Это установит GPIO199 HIGH.
-      echo 0 > /sys/class/gpio/gpio199/value   // Это установит низкий уровень GPIO199.
+      
+# Что в итоге получилось?
+      В конце концов, мы можем управлять освещением лампы или выключать ее через эти команды.
+      
+      // Это установит GPIO199 HIGH.
+      echo 1 > /sys/class/gpio/gpio199/value
+      
+      // Это установит низкий уровень GPIO199.
+      echo 0 > /sys/class/gpio/gpio199/value  
+      
+автора : Курушин Д.С.
+группа : РИС 20-1Б
+ФИО : Эскарус Бешой Паулс Рушди
+предмет : Интернет Вещей 
